@@ -16,6 +16,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "WPGraphql",
+        fieldName: "wpcontent",
+        url: "http://artist-agency.codobi.be/graphql",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
